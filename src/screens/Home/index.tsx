@@ -75,7 +75,7 @@ export function Home() {
           ],
         }
       )
-      const concepts=response.data.outputs[0].data.concepts.map((concept: any)=>{
+      const concepts= response.data.outputs[0].data.concepts.map((concept: any)=>{
         return{
           name: concept.name,
           percentage: `${Math.round(concept.value * 100)}%`
